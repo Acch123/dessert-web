@@ -1,20 +1,23 @@
-* {
-    box-sizing: inherit;
-}
-
+/*elements*/
 body {
     font-family: "Times New Roman", Georgia, Serif;
+    background-color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
+
+
+/*animation properties*/
+.fadeIn {
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.25s all ease-in-out;
 }
 
-div {
-    display:block;
+.fadeIn:hover {
+    opacity: 1;
 }
 
+/*specification*/
 .top {
     top:0;
     position: fixed;
@@ -22,3 +25,11 @@ div {
     z-index: 1;
 }
 
+.bar {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    padding: 8px 16px!important;
+    color:#000;
+    background-color: #fff;
+}
